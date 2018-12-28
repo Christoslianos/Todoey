@@ -25,10 +25,6 @@ let realm = try!Realm ()
     
   
     
-    
- 
-
-    
     //let defaults = UserDefaults.standard
 
     override func viewDidLoad() {
@@ -38,8 +34,6 @@ let realm = try!Realm ()
         
         //print(dataFilePath)
         
-        
-  
         
       //  if let items = defaults.array(forKey: "TodoListArray") as? [Item] {
        //    itemArray = items
@@ -89,29 +83,11 @@ let realm = try!Realm ()
         }
         
         tableView.reloadData()
-        //print(itemArray[indexPath.row])
-        
-       // tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
-        
-        //context.delete(itemArray[indexPath.row])- First delete from staging area and then from array
-       // itemArray.remove(at: indexPath.row)
-        
-    //   todoItems[indexPath.row].done = !todoItems[indexPath.row].done
-        
-       // if tableView.cellForRow(at: indexPath)?.accessoryType == .checkmark {
-            
-       // tableView.cellForRow(at: indexPath)?.accessoryType = .none
-       // }
-       // else {
-         // tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
-      //  }
-        
-        //tableView.reloadData()
+    
         
         tableView.deselectRow(at: indexPath, animated: true)
         
 
-    
         
     }
     
